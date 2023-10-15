@@ -3,7 +3,7 @@
 /**
  * _strlen - Returns the length of a string
  * @str: string pointer
- * Return: 1
+ * Return: i
  */
 
 int _strlen(char *str)
@@ -17,13 +17,14 @@ int _strlen(char *str)
 /**
  * _strlenc - strlen function but applied for constant pointer str
  * @str: char pointer
- * Return: 1
+ * Return: i
  */
+
 int _strlenc(const char *str)
 {
 	int i;
 
-	for (i = 0; str[i] != o; i++)
+	for (i = 0; str[i] != 0; i++)
 		;
 	return (i);
 }
