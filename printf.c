@@ -46,3 +46,45 @@ Here:
 	va_end(args);
 	return (len);
 }
+
+#include "main.h"
+#include <stdarg.h>
+
+/**
+ * _printf - Custom printf function
+ * @format: format string
+ * @...: variable number of arguments
+ * Return: the number of characters printed
+ */
+int _printf(const char *format, ...)
+{
+	va_list args;
+	int i = 0, len = 0;
+
+	va_start(args, format);
+	if (format == NULL)
+		return (-1);
+
+	while (format[i] != '\0')
+	{
+		if (format[i] != '%')
+		{
+			_putchar(format[i]);
+			len++;
+			i++;
+		}
+		else
+		{
+			i++;
+			if (format[i] == '%')
+			{
+				_putchar('%');
+				len++;
+			}
+			i++;
+		}
+	}
+
+	va_end(args);
+	return (len);
+}
