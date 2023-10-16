@@ -18,8 +18,8 @@ int print_HEX(va_list val)
 	}
 	count++;
 	a = malloc(sizeof(int) * count);
-	if (a == NULL)
-		return (NULL);
+
+
 	for (i = 0; i < count; i++)
 	{
 		a[i] = tem % 16;
