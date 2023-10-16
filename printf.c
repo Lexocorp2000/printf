@@ -1,7 +1,7 @@
 #include <limits.h>
 #include <stdio.h>
 #include "main.h"
-#include <stsarg.h>
+#include <stdarg.h>
 
 /**
  * _printf - Copy printf
