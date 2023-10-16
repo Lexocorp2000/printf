@@ -9,6 +9,7 @@
 int print_HEX_extra(unsigned int num)
 {
 	int i, *a, count = 0;
+	unsigned int tem = num;
 	
 	while (num / 16 != 0)
 	{

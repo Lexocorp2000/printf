@@ -20,7 +20,7 @@ typedef struct format
 {
 	char *id;
 	int (*f)();
-} convert_match;
+} match;
 
 int print_pointer(va_list val);
 int print_hex_extra(unsigned long int num);
@@ -31,14 +31,14 @@ int print_hex(va_list val);
 int print_oct(va_list val);
 int print_unsigned(va_list val);
 int print_bin(va_list val);
-int print_revs(va_list val)
+int print_revs(va_list val);
 int print_rot13(va_list val);
 int print_int(va_list val);
 int print_dec(va_list val);
 int _strlen(char *str);
-//int *_strcpy(char *dest, char *src);
+
 int _strlenc(const char *str);
-//int rev_string(char *s);
+
 int print_37(void);
 int print_char(va_list val);
 int print_string(va_list val);

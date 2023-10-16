@@ -10,6 +10,7 @@ int print_oct(va_list val)
 {
 	int i, *a, count = 0;
 	unsigned int num = va_arg(val, unsigned int);
+	unsigned int tem = num;
 
 	while (num / 8 != 0)
 	{
